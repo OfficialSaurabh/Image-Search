@@ -1,19 +1,17 @@
-import React from 'react'
+import React from "react";
+import "../App.css";
 
-export default function ImageShow({images}) {
+export default function ImageShow({ images }) {
   return (
-    <div style={{ backgroundColor:"orange"}}>
+    <div className="image">
       {/* map images */}
-      {images.map((image) => {
+      {images.map(image => {
         return (
-          <div key={image.id}
-          
-          >
+          <div className="img-list" key={image.id}>
             <img src={image.urls.small} alt="" />
           </div>
-        )
-      }
-      )}
+        );
+      })}
     </div>
-  )
+  );
 }

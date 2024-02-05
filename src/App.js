@@ -32,7 +32,7 @@ function App() {
   };
 
   return (
-    <div className="App" style={{ backgroundColor: "orange" }}>
+    <div className="App">
       <Search handleSubmit={getImage} />
       {loading && <h1>Loading...</h1>}
       <ImageShow images={images} />
